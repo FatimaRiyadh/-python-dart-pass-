@@ -1,0 +1,9 @@
+x = int(input("Enter a number: "))
+
+def my_function():
+        if (x % 2) == 0:
+            print(" is Even")
+        else:
+          print(" is Odd")
+
+my_function()
