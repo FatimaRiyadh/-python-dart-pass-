@@ -1,0 +1,51 @@
+import 'package:test/test.dart';
+
+main() {
+  test('Dog', () {
+    expect(printName(), 'sound');
+    expect(printSound(), 'sound');
+  });
+  test('cat', () {
+    expect(printName(), 'sound');
+    expect(printSound(), 'sound');
+  });
+  test('Cow', () {
+    expect(printName(), 'sound');
+    expect(printSound(), 'sound');
+  });
+}
+
+abstract class Animal {
+  void printName();
+  void printSound();
+}
+
+class Dog extends Animal {
+  void printName() {
+    print("sound");
+  }
+
+  void printSound() {
+    print("sound");
+  }
+}
+
+class cat extends Animal {
+  void printName() {
+    print("sound");
+  }
+
+  void printSound() {
+    print("sound");
+  }
+}
+
+class cow extends Animal {
+  void printName() {
+    print("sound");
+  }
+
+  void printSound() {
+    print("sound");
+  }
+}
